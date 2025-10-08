@@ -78,7 +78,7 @@ const NavBar = () => {
       <div className="navbar-end">
         <a
           href="https://github.com/ashqrRhmn101"
-          className="btn bg-purple-700 text-white"
+          className="btn bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white"
         >
           <span className="border rounded-4xl bg-white p-1">
             <Github size={13} color="blue" />

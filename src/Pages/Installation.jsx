@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import InstallationCard from "./InstallationCard";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Installation = () => {
   const [installed, setInstalled] = useState([]);
@@ -13,17 +15,28 @@ const Installation = () => {
   }, []);
 
   //   // Sort Handle
-  const sortedItem = (() => {
-    // const numericOnly = installed.filter(
-    //   (p) =>
-    //     !p.downloads?.toString().toLowerCase().includes("k") &&
-    //     !p.downloads?.toString().toLowerCase().includes("m")
-    // );
+  const getNumber = (num) => {
+    if (!num) return 0;
 
+    const str = num.toString().toLowerCase();
+    if (str.includes("k")) {
+      return parseFloat(str) * 1000;
+    } else if (str.includes("m")) {
+      return parseFloat(str) * 1000000;
+    } else {
+      return parseFloat(str);
+    }
+  };
+
+  const sortedItem = (() => {
     if (sortInstall === "install-asc") {
-      return [...installed].sort((a, b) => a.size - b.size);
+      return [...installed].sort(
+        (a, b) => getNumber(a.downloads) - getNumber(b.downloads)
+      );
     } else if (sortInstall === "install-desc") {
-      return [...installed].sort((a, b) => b.size - a.size);
+      return [...installed].sort(
+        (a, b) => getNumber(b.downloads) - getNumber(a.downloads)
+      );
     } else {
       return installed;
     }
@@ -31,6 +44,25 @@ const Installation = () => {
 
   //   // handleRemove .
   const handleUninstall = (id) => {
+    toast(
+      <div role="alert" className="flex items-center text-red-500 gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6 shrink-0 stroke-current"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+        <span>App uninstall successfully!</span>
+      </div>
+    );
+
     const existingList = JSON.parse(localStorage.getItem("install"));
     let updateList = existingList.filter((p) => p.id !== id);
     setInstalled(updateList);
@@ -52,7 +84,6 @@ const Installation = () => {
           </select>
         </label>
       </div>
-
       <div>
         {sortedItem.map((product) => (
           <InstallationCard
@@ -62,6 +93,7 @@ const Installation = () => {
           />
         ))}
       </div>
+      <ToastContainer />
     </div>
   );
 };
