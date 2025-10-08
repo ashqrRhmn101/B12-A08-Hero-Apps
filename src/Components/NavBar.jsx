@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router";
 import logoImg from "../assets/logo.png";
+import { Github } from "lucide-react";
 
 const NavBar = () => {
   return (
@@ -38,6 +39,11 @@ const NavBar = () => {
                 Apps
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/installation" className="font-semibold">
+                Installation
+              </NavLink>
+            </li>
           </ul>
         </div>
         <Link
@@ -62,10 +68,23 @@ const NavBar = () => {
               Apps
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/installation" className="font-semibold">
+              Installation
+            </NavLink>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a
+          href="https://github.com/ashqrRhmn101"
+          className="btn bg-purple-700 text-white"
+        >
+          <span className="border rounded-4xl bg-white p-1">
+            <Github size={13} color="blue" />
+          </span>{" "}
+          Contribute
+        </a>
       </div>
     </div>
   );

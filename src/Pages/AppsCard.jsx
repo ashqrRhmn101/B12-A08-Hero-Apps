@@ -3,10 +3,10 @@ import React from "react";
 import { Link } from "react-router";
 
 const AppsCard = ({ product }) => {
-  const { image, title, downloads, ratingAvg } = product;
+  const { image, title, downloads, ratingAvg, id } = product;
   return (
-    <Link to="/home">
-      <div className="rounded-lg border p-2 space-y-3">
+    <Link to={`/apps/${id}`}>
+      <div className="rounded-lg border p-2 space-y-3 hover:scale-105 transition ease-in-out">
         <div className="bg-gray-100 h-[100px] rounded-lg">
           <img className="" src={image} alt="" />
         </div>

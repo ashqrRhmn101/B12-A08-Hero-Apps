@@ -36,7 +36,7 @@ const HeroSection = () => {
           <h1 className="text-4xl text-white font-bold">
             Trusted by Millions, Built for You
           </h1>
-          <div className="text-white w-full flex justify-center">
+          <div className="text-white w-full flex justify-center items-center flex-wrap md:flex-nowrap">
             <div className="stat">
               <div className="stat-title text-white">Total Downloads</div>
               <div className="stat-value text-white">29.6M</div>

@@ -44,7 +44,7 @@ const Apps = () => {
           />
         </label>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 py-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 py-5 ">
         {term && searchProducts.length === 0 ? (
           <h1 className="text-center text-xl font-semibold col-span-full">
             Not Found 😔
