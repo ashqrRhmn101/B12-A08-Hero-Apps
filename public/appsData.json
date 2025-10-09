@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "../src/assets/1.jpg",
+    "image": "https://i.ibb.co.com/S7Gv1YPQ/Whats-App-Image-2025-10-08-at-19-26-10-3d64df6c.jpg",
     "title": "ChatMate AI Assistant",
     "companyName": "NextGen Softworks",
     "description": "ChatMate AI Assistant is your personal smart companion designed to help with daily tasks, answer complex questions, write emails, and even summarize documents. Built with cutting-edge AI technology, it ensures a seamless and intelligent conversation experience.",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "image": "../src/assets/2.jpg",
+    "image": "https://i.ibb.co.com/HDYvfYTS/Whats-App-Image-2025-10-08-at-19-26-11-f3247a62.jpg",
     "title": "FitTrack Pro",
     "companyName": "BodyTech Labs",
     "description": "FitTrack Pro is a health and fitness tracker that monitors your heart rate, steps, calories, and sleep patterns. With personalized fitness goals, workout reminders, and real-time data sync, it helps you stay motivated and reach your wellness targets easily.",
@@ -37,7 +37,7 @@
   },
   {
     "id": 3,
-    "image": "../src/assets/3.jpg",
+    "image": "https://i.ibb.co.com/cKZ3mW0x/Whats-App-Image-2025-10-08-at-19-26-11-2bd997b2.jpg",
     "title": "PicPerfect Editor",
     "companyName": "Visionary Studios",
     "description": "PicPerfect Editor is a professional-grade photo editing app that allows you to enhance, filter, and retouch your photos effortlessly. It includes AI-based background removal, beauty retouch, collage maker, and more—all in a clean, intuitive interface.",
@@ -55,7 +55,7 @@
   },
   {
     "id": 4,
-    "image": "../src/assets/4.jpg",
+    "image": "https://i.ibb.co.com/5XKTC7XR/Whats-App-Image-2025-10-08-at-19-26-11-fccdc779.jpg",
     "title": "StudyMaster AI",
     "companyName": "EduCore Solutions",
     "description": "StudyMaster AI helps students prepare for exams by providing AI-powered notes, practice questions, and flashcards. It analyzes your weak topics and offers custom recommendations to improve your learning speed and retention rate.",
@@ -73,7 +73,7 @@
   },
   {
     "id": 5,
-    "image": "../src/assets/5.jpg",
+    "image": "https://i.ibb.co.com/B2zR1tzF/Whats-App-Image-2025-10-08-at-19-26-12-89b0d7bd.jpg",
     "title": "TravelGo Explorer",
     "companyName": "WanderWorks Inc.",
     "description": "TravelGo Explorer is your all-in-one travel companion that helps you discover destinations, book hotels, plan itineraries, and get real-time flight updates. With AI suggestions, you can explore hidden gems tailored to your travel style.",
@@ -91,7 +91,7 @@
   },
   {
     "id": 6,
-    "image": "../src/assets/6.jpg",
+    "image": "https://i.ibb.co.com/nMrH4MPL/Whats-App-Image-2025-10-08-at-19-26-12-aecb409c.jpg",
     "title": "MusicFy Player",
     "companyName": "SoundWave Media",
     "description": "MusicFy Player is a next-generation music streaming app with offline downloads, equalizer settings, and personalized playlists. It curates tracks based on your mood and listening habits, ensuring an enjoyable audio experience anytime.",
@@ -109,7 +109,7 @@
   },
   {
     "id": 7,
-    "image": "../src/assets/7.jpg",
+    "image": "https://i.ibb.co.com/0xRrxTJ/Whats-App-Image-2025-10-08-at-19-26-13-534ff55c.jpg",
     "title": "NewsZone 24x7",
     "companyName": "InfoStream Network",
     "description": "NewsZone 24x7 delivers breaking news, trending stories, and live updates from around the world. With customizable categories and offline reading mode, it keeps you informed anytime, anywhere.",
@@ -127,7 +127,7 @@
   },
   {
     "id": 8,
-    "image": "../src/assets/8.jpg",
+    "image": "https://i.ibb.co.com/ch09CfZv/Whats-App-Image-2025-10-08-at-19-26-13-eba1023a.jpg",
     "title": "ShopZone Online",
     "companyName": "MegaCart Ltd.",
     "description": "ShopZone Online offers millions of products at unbeatable prices. From electronics to fashion, groceries to gadgets, it provides fast delivery, secure payments, and 24/7 customer support for a premium shopping experience.",
@@ -145,7 +145,7 @@
   },
   {
     "id": 9,
-    "image": "../src/assets/9.jpg",
+    "image": "https://i.ibb.co.com/YFxSRdDn/Whats-App-Image-2025-10-08-at-19-26-13-3bcc740a.jpg",
     "title": "FinTrack Wallet",
     "companyName": "SmartPay Systems",
     "description": "FinTrack Wallet helps you manage your money smartly. Track expenses, set budgets, and receive insights on your financial habits. It also supports UPI and bank transfers with end-to-end encryption for secure transactions.",
@@ -163,7 +163,7 @@
   },
   {
     "id": 10,
-    "image": "../src/assets/10.jpg",
+    "image": "https://i.ibb.co.com/xtd5SHFs/Whats-App-Image-2025-10-08-at-19-26-14-f5fc6a8e.jpg",
     "title": "CameraX Pro",
     "companyName": "PixelPro Labs",
     "description": "CameraX Pro turns your smartphone into a professional camera. Capture cinematic photos and 4K videos with AI enhancement, manual mode, RAW support, and advanced lighting adjustments for creators and photographers.",
@@ -181,7 +181,7 @@
   },
   {
     "id": 11,
-    "image": "../src/assets/11.jpg",
+    "image": "https://i.ibb.co.com/0VvX894t/Whats-App-Image-2025-10-08-at-19-26-14-e4021c1d.jpg",
     "title": "TaskFlow Manager",
     "companyName": "FlowByte Technologies",
     "description": "TaskFlow Manager is a productivity booster that helps teams collaborate and manage projects efficiently. With Kanban boards, reminders, and analytics, it keeps your work organized and progress measurable.",
@@ -199,7 +199,7 @@
   },
   {
     "id": 12,
-    "image": "../src/assets/12.jpg",
+    "image": "https://i.ibb.co.com/PsMfVmzg/Whats-App-Image-2025-10-08-at-19-26-15-e6f55516.jpg",
     "title": "LearnHub Courses",
     "companyName": "SkillBoost Co.",
     "description": "LearnHub Courses offers thousands of online courses in programming, design, marketing, and personal development. With lifetime access, progress tracking, and expert instructors, learning has never been easier.",
@@ -217,7 +217,7 @@
   },
   {
     "id": 13,
-    "image": "../src/assets/13.jpg",
+    "image": "https://i.ibb.co.com/4ZpCW8hb/Whats-App-Image-2025-10-08-at-19-26-15-bc68d658.jpg",
     "title": "GameArena Hub",
     "companyName": "PixelPlay Studios",
     "description": "GameArena Hub is a one-stop platform for discovering, downloading, and reviewing the latest mobile games. It offers recommendations, leaderboards, and exclusive in-game rewards for active players.",
@@ -235,7 +235,7 @@
   },
   {
     "id": 14,
-    "image": "../src/assets/14.jpg",
+    "image": "https://i.ibb.co.com/6c0pPqdp/Whats-App-Image-2025-10-08-at-19-26-15-5540b87d.jpg",
     "title": "Weatherly Now",
     "companyName": "SkyData Corp.",
     "description": "Weatherly Now provides hyper-accurate forecasts, live radar, and air quality data in real time. Stay ahead of storms and track temperature trends with beautiful, interactive charts and smart notifications.",
@@ -253,7 +253,7 @@
   },
   {
     "id": 15,
-    "image": "../src/assets/15.jpg",
+    "image": "https://i.ibb.co.com/Rpy6xNtt/Whats-App-Image-2025-10-08-at-19-26-16-bc38d45a.jpg",
     "title": "SecureVault Password Manager",
     "companyName": "CyberTrust Apps",
     "description": "SecureVault Password Manager keeps your accounts safe with advanced AES-256 encryption. Generate strong passwords, autofill login fields, and sync securely across devices—all protected by biometric authentication.",

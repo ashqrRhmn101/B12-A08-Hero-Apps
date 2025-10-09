@@ -12,6 +12,7 @@ import {
 } from "recharts";
 import { Download, Star, ThumbsUp } from "lucide-react";
 import { toast, ToastContainer } from "react-toastify";
+import LoadingSkeleton from "./LoadingSkeleton";
 
 const AppsDetailsCard = () => {
   const { id } = useParams();
@@ -30,7 +31,7 @@ const AppsDetailsCard = () => {
     const isAlreadyInstall = installList.some((p) => p.id === product.id);
     setIsInstalled(isAlreadyInstall);
   }, [products, parsIntId]);
-  if (loading) return <p>loading....</p>;
+  if (loading) return <LoadingSkeleton count={1}/>;
 
   const product = products.find((p) => p.id === parsIntId);
   const {
@@ -40,7 +41,7 @@ const AppsDetailsCard = () => {
     downloads,
     ratingAvg,
     reviews,
-    // size,
+    size,
     ratings,
     description,
   } = product;
@@ -61,7 +62,7 @@ const AppsDetailsCard = () => {
             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
           />
         </svg>
-        <span>App Install!</span>
+        <span>Successful App Installed!</span>
       </div>
     );
     const existingList = JSON.parse(localStorage.getItem("install")) || [];
@@ -86,7 +87,7 @@ const AppsDetailsCard = () => {
   };
 
   return (
-    <div>
+    <div className="max-w-screen-xl mx-auto w-full px-4 md:px-8 lg-px-12 py-4 md:py-8 lg-py-12">
       <div className="bg-base-200 shadow p-5">
         <div className="flex gap-12 flex-col md:flex-row">
           <img
@@ -125,7 +126,7 @@ const AppsDetailsCard = () => {
               }`}
             >
               <ToastContainer />
-              {isInstalled ? "Uninstall" : ` Install Now ({size} MB) `}
+              {isInstalled ? "Uninstall" : ` Install Now (${size} MB) `}
             </button>
           </div>
         </div>

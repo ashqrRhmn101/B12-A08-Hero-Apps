@@ -2,17 +2,33 @@ import React, { useEffect, useState } from "react";
 import InstallationCard from "./InstallationCard";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LoadingDetails from "./LoadingDetails";
 
 const Installation = () => {
   const [installed, setInstalled] = useState([]);
   //   console.log(installed);
   const [sortInstall, setSortInstall] = useState("none");
+
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    const savedApp = JSON.parse(localStorage.getItem("install"));
-    if (savedApp) {
-      setInstalled(savedApp);
-    }
+    setLoading(true);
+
+    setTimeout(() => {
+      const savedApp = JSON.parse(localStorage.getItem("install"));
+      if (savedApp) {
+        setInstalled(savedApp);
+      }
+      setLoading(false);
+    }, 500);
   }, []);
+
+  // useEffect(() => {
+  //   const savedApp = JSON.parse(localStorage.getItem("install"));
+  //   if (savedApp) {
+  //     setInstalled(savedApp);
+  //   }
+  // }, []);
 
   //   // Sort Handle
   const getNumber = (num) => {
@@ -69,7 +85,14 @@ const Installation = () => {
     localStorage.setItem("install", JSON.stringify(updateList));
   };
   return (
-    <div>
+    <div className="max-w-screen-xl mx-auto w-full px-4 md:px-8 lg-px-12 py-4 md:py-8 lg-py-12">
+      <div className="text-center py-8 space-y-3">
+        <h1 className="text-3xl font-bold">My Installed Apps</h1>
+        <p className="text-[#627382]">
+          Explore All Trending Apps on the Market developed by us
+        </p>
+      </div>
+
       <div className="flex justify-between items-center py-8">
         <h1 className="text-xl font-bold">{sortedItem.length} Apps Found</h1>
         <label className="form-control w-[150px] max-w-xs">
@@ -85,13 +108,17 @@ const Installation = () => {
         </label>
       </div>
       <div>
-        {sortedItem.map((product) => (
-          <InstallationCard
-            key={product.id}
-            product={product}
-            handleUninstall={handleUninstall}
-          />
-        ))}
+        {loading ? (
+          <LoadingDetails count={installed.length || sortedItem.length}/>
+        ) : (
+          sortedItem.map((product) => (
+            <InstallationCard
+              key={product.id}
+              product={product}
+              handleUninstall={handleUninstall}
+            />
+          ))
+        )}
       </div>
       <ToastContainer />
     </div>

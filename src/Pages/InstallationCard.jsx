@@ -7,11 +7,11 @@ const InstallationCard = ({ product, handleUninstall }) => {
   return (
     <div>
       <div className="bg-base-200 shadow mb-4 md:flex justify-between items-center p-5 ">
-        <div className="md:flex gap-5 p-5 space-y-3">
-         <div>
+        <div className="md:flex items-center gap-12 space-y-3">
+         <div className="bg-gray-100 p-5 md:py-5 md:px-8 rounded-2xl">
            <img
             src={image}
-            className="max-w-sm rounded-lg shadow-2xl md:w-[150px] w-[200px]  mx-auto  bg-gray-100"
+            className="max-w-sm rounded-lg shadow-xl h-[120px] mx-auto"
           />
          </div>
           <div className="space-y-4">
