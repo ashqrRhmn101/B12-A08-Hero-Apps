@@ -2,6 +2,8 @@
 
 **Live Link:** [https://hero-apps-ashoqur101.pages.dev/](https://hero-apps-ashoqur101.pages.dev/)
 
+**Live Link ( Netlify ) :** [https://b12-a08-hero-apps-ashiqur101.netlify.app/](https://b12-a08-hero-apps-ashiqur101.netlify.app/)
+
 ---
 
 ## 🚀 About the Project
