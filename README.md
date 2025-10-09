@@ -1,6 +1,6 @@
 # 🌟 HERO.IO – We Build Productive Apps
 
-**Live Link:** [https://b12-a08-hero-apps-ashiqur101.netlify.app/](https://b12-a08-hero-apps-ashiqur101.netlify.app/)
+**Live Link:** [https://hero-apps-ashoqur101.pages.dev/](https://hero-apps-ashoqur101.pages.dev/)
 
 ---
 

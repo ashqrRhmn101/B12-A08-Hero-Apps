@@ -101,7 +101,7 @@ const Installation = () => {
             onChange={(e) => setSortInstall(e.target.value)}
             className="select select-bordered "
           >
-            <option value="none">Sort By Size</option>
+            <option value="none">Sort By Download</option>
             <option value="install-asc">Low-&gt;High</option>
             <option value="install-desc">High-&gt;Low</option>
           </select>
@@ -109,7 +109,7 @@ const Installation = () => {
       </div>
       <div>
         {loading ? (
-          <LoadingDetails count={installed.length || sortedItem.length}/>
+          <LoadingDetails count={installed.length || sortedItem.length} />
         ) : (
           sortedItem.map((product) => (
             <InstallationCard
