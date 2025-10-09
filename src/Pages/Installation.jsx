@@ -95,7 +95,7 @@ const Installation = () => {
 
       <div className="flex justify-between items-center py-8">
         <h1 className="text-xl font-bold">{sortedItem.length} Apps Found</h1>
-        <label className="form-control w-[150px] max-w-xs">
+        <label className="form-control w-[175px] max-w-xs">
           <select
             value={sortInstall}
             onChange={(e) => setSortInstall(e.target.value)}
